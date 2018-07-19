@@ -1,0 +1,372 @@
+body{
+  font-family: Oswald;
+  color: #111;
+  position: relative;
+  overflow-x: hidden;
+}
+/*.New_align{
+  display: table-row;
+
+}
+
+.vertical-align{
+display: table-cell;
+vertical-align: middle;
+
+}*/
+
+/*----- Navigation Bar------- */
+.my-nav{
+  border: 0;
+  border-radius: 0;
+  background: rgba(95,95,95, 0.4);
+  padding-top: 30px;
+}
+
+@media only screen and (max-width: 766px) {
+.collapsing, .in {background: rgba(55, 55, 55, 0.9);}
+.collapsing ul li a, .in ul li a {color: #fff!important; }
+.collapsing ul li a:hover, .in ul li a:hover {color: #FF8C00!important; }
+#portfolio .portfolio-thumb {margin-bottom: 20px; float: none;}
+#contact {   background-size: initial !important; }
+}
+
+
+.my-nav .navbar-nav li a{
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.my-nav .navbar-nav li a:hover{
+
+  color: #FF8C00;
+
+}
+
+/*----- Home------- */
+
+#home{
+  background: url(../images/home.png) fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 100px 0;
+  /*height: 600px;*/
+}
+
+#home h1{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#home h1 span{
+    color: #FF8C00;
+}
+#home h3{
+    font-family: lato;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 20px 20% 35px 20%;
+}
+#home a{
+
+  background-color: #ff8c00;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#home a:hover{
+  background-color: #fff;
+
+  color: #ff8c00;
+}
+
+/*----- About------- */
+
+#about{
+  background-color: #FFF;
+  padding: 50px 0;
+  /*height: 540px;*/
+}
+
+#about h1{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#about h1 span{
+    color: #FF8C00;
+}
+#about h3{
+    font-family: lato;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 0 20%;
+}
+
+/*----- Portfolio ------- */
+
+#portfolio {
+    padding: 50px 0;
+}
+
+#portfolio .col-md-4{
+  padding: 0;
+}
+.portfolio-thumb, .portfolio-overlay{
+  height: 270px;
+  max-width: 390px;
+}
+#portfolio .portfolio-thumb img{
+  height: 100%;
+  width: 100%;
+}
+#portfolio .portfolio-thumb{
+
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+#portfolio .portfolio-thumb .portfolio-overlay{
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  text-align: center;
+  position: absolute;
+  background: rgba(255, 153, 0, 0.6);
+  padding: 20px 10px 20px 20px;
+
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+#portfolio .portfolio-thumb:hover .portfolio-overlay{
+  opacity: 1;
+  cursor: pointer;
+
+}
+#portfolio .portfolio-thumb .portfolio-overlay h2{
+  color: #fff;
+  font-weight: 300;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  padding: 5px 10px 10px 10px;
+}
+#portfolio .portfolio-thumb .portfolio-overlay a{
+  color: #fff;
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  right: 20px;
+}
+
+/*----- Client------- */
+
+#client{
+  background-color: #ededed;
+    padding: 50px 0;
+  /*height: 800px;*/
+
+}
+#client h1{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#client h1 span{
+    color: #FF8C00;
+}
+#client h3{
+    font-family: lato;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 10px 0 20px 0;
+
+}
+#client .myq{
+  background-color: #fff;
+  border: 5px solid #ededed;
+  border-radius: 0;
+  box-shadow: none;
+
+}
+#client .myq p{
+  font-size: 16px;
+  text-align: left;
+  font-family: lato;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 200%;
+}
+#client .myq img{
+  width: 150px;
+  padding: 0;
+  float: left;
+
+}
+
+#client .service-title {
+
+  margin-left: 5px;
+  display: inline-block;
+}
+#client .service-title h3{
+  font-family: Oswald;
+  font-weight: 500;
+}
+#client .service-title h4{
+  font-family: lato;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: -2px;
+}
+
+/*----- Experience------- */
+
+#myexp{
+  background-color: #FFF;
+    padding: 50px 0;
+  /*height: 940px;*/
+}
+
+#myexp h1{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#myexp h1 span{
+    color: #FF8C00;
+}
+#myexp h3{
+    font-family: lato;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 0 5% 40px 5%;
+    line-height: 40px;
+}
+#myexp .well{
+  box-shadow: none;
+}
+#myexp .well img{
+  width: 120px;
+  padding: 0;
+  margin-right: 8px;
+  float: left;
+
+
+}
+#myexp .well {
+  text-align: left;
+  margin-left: 5px;
+  display: inline-block;
+  background-color: #fff;
+}
+#myexp .well h3{
+  font-family: Oswald;
+  font-weight: 500;
+  margin-top: -5px;
+  padding: 0;
+}
+#myexp .well h4{
+  font-family: lato;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+  margin-top: -1px;
+}
+#myexp .well h5{
+  font-family: lato;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 2px;
+}
+
+/*----- Contact Form------- */
+
+#contact{
+  background: url(../images/contact.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size:100%;
+  color: #fff;
+  /*height: 670px;*/
+}
+#contact .section-title {
+  padding: 60px 0 0 0;
+}
+#contact h1{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#contact h1 span{
+    color: #FF8C00;
+}
+#contact h3{
+    font-family: lato;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 60px;
+}
+#contact a{
+
+  background-color: #ff8c00;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#contact a:hover{
+  background-color: #fff;
+
+  color: #ff8c00;
+}
+
+#contact .mymsg-box{
+  background-color: #fff;
+  text-align: left;
+  color: #000;
+  padding: 30px;
+}
+#contact .myinfo-box{
+  background-color: #dbdbdb;
+  text-align: left;
+  color: #000;
+  padding: 30px;
+
+}
+#contact .h33{
+  text-transform: uppercase;
+  font-size: 22px;
+  font-family: Oswald;
+  font-weight: 500;
+  padding-bottom: 50px;
+}
+
+#contact .myinfo-box header{
+  padding-bottom: 30px;
+  font-family: lato;
+}
+#contact .myinfo-box header .service-title h4{
+  font-size: 14px;
+  padding-left: 50px;
+  font-weight: 300;
+}
+#contact .myinfo-box header i{
+  font-size: 24px;
+  color: #ff8c00;
+  float: left;
+  padding-right: 10px;}
+
+#contact .form-group{
+  padding-bottom: 15px;
+  font-family: lato;
+  font-weight: 300;
+}
